@@ -2,7 +2,7 @@
 
 Hello everyone\! 👋
 
-Let me introduce myself, I'm **Eki Zulfar Rachman**. On this occasion, I'd like to share the portfolio website project that I've developed.
+Let me introduce myself, I'm **Ananda Galih Pratiwi**. On this occasion, I'd like to share the portfolio website project that I've developed.
 
 ## 🚀 Live Demo
 
@@ -177,7 +177,7 @@ VALUES ('REPLACE_WITH_YOUR_CERTIFICATE_IMAGE_URL.png');
 
 -- Insert one example comment
 INSERT INTO public.portfolio_comments (content, user_name)
-VALUES ('Created By Eki Zulfar Rachman', 'ANANDA GALIH');
+VALUES ('Created By Ananda Galih Pratiwi', 'ANANDA GALIH');
 
 ```
 
@@ -237,7 +237,7 @@ We would appreciate it if you decide to use this project. Please include proper 
 
 If you have any questions or need help with the setup, feel free to reach out\!
 
-**Eki Zulfar Rachman**
+**Ananda Galih Pratiwi**
 
 - Website: [https://www.eki.my.id/](https://www.eki.my.id/)
 - GitHub: [ANANDA GALIH](https://github.com/ANANDA GALIH)
