@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, ExternalLink, Github, Code2, Star, ChevronRight, Layers, Layout, Globe, Package, Cpu, Code } from "lucide-react";
 import Swal from "sweetalert2";
+import CardProject from "../components/CardProject";
 
 const TECH_ICONS = {
   React: Globe,
@@ -172,14 +173,11 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#030014] px-[2%] sm:px-0 relative overflow-hidden">
-      {/* Background animations remain unchanged */}
-      <div className="fixed inset-0">
-        <div className="absolute -inset-[10px] opacity-20">
-          <div className="absolute top-0 -left-4 w-72 md:w-96 h-72 md:h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
-          <div className="absolute top-0 -right-4 w-72 md:w-96 h-72 md:h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
-          <div className="absolute -bottom-8 left-20 w-72 md:w-96 h-72 md:h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
-        </div>
+    <div className="min-h-screen bg-[#3a2a31] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] text-white relative">
+      <div className="absolute -inset-[10px] opacity-20">
+        <div className="absolute top-0 -left-4 w-72 md:w-96 h-72 md:h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
+        <div className="absolute top-0 -right-4 w-72 md:w-96 h-72 md:h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-8 left-20 w-72 md:w-96 h-72 md:h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03]" />
       </div>
 
@@ -260,9 +258,8 @@ const ProjectDetails = () => {
             {/* Right Column */}
             <div className="space-y-6 md:space-y-10 animate-slideInRight">
               <div className="relative rounded-2xl overflow-hidden border border-pink-200 shadow-xl group bg-white/70">
-                <img src={project.Img} alt={project.Title} className="w-full object-cover transform transition-transform duration-700 group-hover:scale-105" onLoad={() => setIsImageLoaded(true)} />
+                <img src={`/${project.Img}`} alt={project.Title} className="w-full object-cover transform transition-transform duration-700 group-hover:scale-105" onLoad={() => setIsImageLoaded(true)} />
               </div>
-
               {/* Key Features */}
               <div className=" backdrop-blur-xl rounded-2xl p-8 border border-pink-200 space-y-6 hover:shadow-lg hover:shadow-pink-100 transition-all duration-300">
                 <h3 className="text-xl font-semibold text-[#4b4453] flex items-center gap-3">
