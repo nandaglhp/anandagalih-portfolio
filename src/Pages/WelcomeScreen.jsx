@@ -133,13 +133,18 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
               </motion.div>
 
               {/* Website Link */}
-              <motion.div className="text-center" variants={childVariants} data-aos="fade-up" data-aos-delay="1200">
-                <a href="https://www.ananda.my.id" className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300" target="_blank" rel="noopener noreferrer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-pink-300/40 via-rose-300/30 to-purple-300/40 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
+              <motion.div className="text-center" variants={childVariants} data-aos="fade-up" data-aos-delay="1500">
+                <a
+                  href="anandagalih-portfolio.vercel.app"
+                  className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-300/40 via-rose-300/30 to-purple-300/40 rounded-full blur-md group-hover:blur-lg transition-all duration-500" />
                   <div className="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl">
                     <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-rose-500" />
                     <span className="bg-gradient-to-r from-pink-500 via-rose-400 to-purple-400 bg-clip-text text-transparent">
-                      <TypewriterEffect text="www.ananda-portfolio" />
+                      <TypewriterEffect text="ananda's portfolio" />
                     </span>
                   </div>
                 </a>
