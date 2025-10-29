@@ -96,18 +96,25 @@ function a11yProps(index) {
 
 // techStacks tetap sama
 const techStacks = [
+  { icon: "excel.png", language: "Excel" },
+  { icon: "sql.svg", language: "SQL" },
+  { icon: "python.svg", language: "Python" },
+  { icon: "r.png", language: "R" },
+  { icon: "Tableau.svg", language: "Tableau" },
+  { icon: "Power_BI.svg", language: "Power BI" },
+  { icon: "looker.png", language: "Google Looker" },
+  { icon: "jupyter.svg", language: "Jupyter" },
+  { icon: "Jira.svg", language: "JIRA" },
+  { icon: "Trello.svg", language: "Trello" },
+  { icon: "Visio.svg", language: "MS Visio" },
+  { icon: "Lucidchart.svg", language: "Lucidchart" },
+  { icon: "Postman.svg", language: "Postman" },
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
   { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "javascript.svg", language: "Javascript" },
+  { icon: "reactjs.svg", language: "React" },
+  { icon: "Laravel.svg", language: "Laravel" },
 ];
 
 export default function FullWidthTabs() {
