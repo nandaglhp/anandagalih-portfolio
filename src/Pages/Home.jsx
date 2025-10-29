@@ -191,7 +191,7 @@ const Home = () => {
                 <div className={`absolute inset-0 bg-gradient-to-r from-primary-200/10 to-primary-400/10 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${isHovering ? "opacity-50 scale-105" : "opacity-20 scale-100"}`}></div>
 
                 <div className={`relative lg:left-12 z-10 w-full opacity-90 transform transition-transform duration-500 ${isHovering ? "scale-105" : "scale-100"}`}>
-                  <DotLottieReact {...lottieOptions} />
+                  <img src="/home-img/home-Analytics.png" alt="Analytics" className={`w-full h-auto rounded-3xl transition-transform duration-500 ${isHovering ? "scale-105" : "scale-100"}`} />
                 </div>
 
                 <div className={`absolute inset-0 pointer-events-none transition-all duration-700 ${isHovering ? "opacity-50" : "opacity-20"}`}>
