@@ -166,8 +166,16 @@ const Home = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
-                  <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
-                  <CTAButton href="#Contact" text="Contact" icon={Mail} />
+                  <a href="#Portofolio">
+                    <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-[#e91e63] to-[#ec407a] text-white font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 flex items-center gap-2">
+                      <ExternalLink className="w-5 h-5" /> Projects
+                    </button>
+                  </a>
+                  <a href="#Contact">
+                    <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-[#e91e63] to-[#ec407a] text-white font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 flex items-center gap-2">
+                      <Mail className="w-5 h-5" /> Contact
+                    </button>
+                  </a>
                 </div>
 
                 {/* Social Links */}
