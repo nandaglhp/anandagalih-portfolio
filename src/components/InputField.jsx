@@ -11,9 +11,7 @@ const InputField = ({ field, label, icon: Icon, formData, handleChange }) => {
       focus:ring-offset-[#1c1e26] transition-all duration-300 peer
     `;
 
-    const hoverFocusClasses = isFocused
-      ? "shadow-[0_4px_12px_rgba(99,102,241,0.4)] border-[#6366f1]"
-      : "border-white/20 hover:border-[#6366f1]";
+    const hoverFocusClasses = isFocused ? "shadow-[0_4px_12px_rgba(99,102,241,0.4)] border-[#6366f1]" : "border-white/20 hover:border-[#6366f1]";
 
     return `${baseClasses} ${hoverFocusClasses} ${isTextArea ? "h-52 pt-12" : "pl-12"}`;
   };
@@ -21,19 +19,7 @@ const InputField = ({ field, label, icon: Icon, formData, handleChange }) => {
   // Render input or textarea based on the field type
   const renderInputContent = () => {
     if (field === "message") {
-      return (
-        <textarea
-          id={field}
-          name={field}
-          placeholder={label}
-          value={formData[field]}
-          onChange={handleChange}
-          onFocus={() => setIsFocused(true)}
-          onBlur={() => setIsFocused(false)}
-          className={getInputClasses(true)}
-          required
-        />
-      );
+      return <textarea id={field} name={field} placeholder={label} value={formData[field]} onChange={handleChange} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} className={getInputClasses(true)} required />;
     }
 
     return (
@@ -55,31 +41,36 @@ const InputField = ({ field, label, icon: Icon, formData, handleChange }) => {
   return (
     <div className="relative w-full group">
       {/* Icon and Label */}
-      <div className="absolute left-4 top-4 flex items-center space-x-2 text-gray-400 transition-colors group-hover:text-[#6366f1]">
+      <div className="absolute left-4 top-4 flex items-center space-x-2 text-rose-300 transition-colors group-hover:text-rose-400">
         <Icon className="w-5 h-5" />
         <label
           htmlFor={field}
           className={`
-            absolute left-12 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm transition-all duration-300 
-            peer-placeholder-shown:top-1/2 peer-placeholder-shown:translate-y-0 
-            peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base 
-            peer-focus:top-2 peer-focus:translate-y-0 peer-focus:text-[#6366f1] peer-focus:text-sm
-          `}
+          absolute left-12 top-1/2 transform -translate-y-1/2 
+          text-gray-400 text-sm transition-all duration-300 
+          peer-placeholder-shown:top-1/2 peer-placeholder-shown:translate-y-0 
+          peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base 
+          peer-focus:top-2 peer-focus:translate-y-0 
+          peer-focus:text-rose-400 peer-focus:text-sm
+        `}
         >
           {label}
         </label>
       </div>
 
-      {/* Input or Textarea */}
+      {/* Input / Textarea */}
       {renderInputContent()}
 
-      {/* Focus/Hover Border Effect */}
+      {/* Focus / Hover Border */}
       <div
         className={`
-          absolute inset-0 border rounded-xl pointer-events-none 
-          transition-all duration-300 
-          ${isFocused ? "border-[#6366f1]" : "border-transparent"}
-        `}
+        absolute inset-0 border rounded-xl pointer-events-none 
+        transition-all duration-300 
+        ${isFocused ? "border-gradient-to-r from-rose-300 via-pink-400 to-rose-300" : "border-white/10"}
+      `}
+        style={{
+          boxShadow: isFocused ? "0 0 10px rgba(244, 114, 182, 0.3)" : "none",
+        }}
       ></div>
     </div>
   );

@@ -65,12 +65,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full top-0 z-50 transition-all duration-500 ${isOpen ? "bg-[#030014]" : scrolled ? "bg-[#030014]/50 backdrop-blur-xl" : "bg-transparent"}`}>
+    <nav
+      className={`fixed w-full top-0 z-50 transition-all duration-500 ${
+        isOpen ? "bg-white/20 backdrop-blur-2xl border-b border-rose-100/40 shadow-sm" : scrolled ? "bg-white/10 backdrop-blur-xl border-b border-rose-100/30" : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto px-[5%] sm:px-[5%] lg:px-[10%]">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#Home" onClick={(e) => scrollToSection(e, "#Home")} className="text-xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent">
+            <a href="#Home" onClick={(e) => scrollToSection(e, "#Home")} className="text-xl font-bold bg-gradient-to-r from-rose-400 via-pink-500 to-rose-600 bg-clip-text text-transparent">
               ANANDA GALIH
             </a>
           </div>
@@ -82,13 +86,13 @@ const Navbar = () => {
                 <a key={item.label} href={item.href} onClick={(e) => scrollToSection(e, item.href)} className="group relative px-1 py-2 text-sm font-medium">
                   <span
                     className={`relative z-10 transition-colors duration-300 ${
-                      activeSection === item.href.substring(1) ? "bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent font-semibold" : "text-[#e2d3fd] group-hover:text-white"
+                      activeSection === item.href.substring(1) ? "bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent font-semibold" : "text-rose-900/70 hover:text-rose-600"
                     }`}
                   >
                     {item.label}
                   </span>
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] transform origin-left transition-transform duration-300 ${
+                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-rose-400 to-pink-500 transform origin-left transition-transform duration-300 ${
                       activeSection === item.href.substring(1) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                     }`}
                   />
@@ -99,7 +103,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className={`relative p-2 text-[#e2d3fd] hover:text-white transition-transform duration-300 ease-in-out transform ${isOpen ? "rotate-90 scale-125" : "rotate-0 scale-100"}`}>
+            <button onClick={() => setIsOpen(!isOpen)} className={`relative p-2 text-rose-500 hover:text-pink-600 transition-transform duration-300 ease-in-out transform ${isOpen ? "rotate-90 scale-125" : "rotate-0 scale-100"}`}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
@@ -115,7 +119,7 @@ const Navbar = () => {
               href={item.href}
               onClick={(e) => scrollToSection(e, item.href)}
               className={`block px-4 py-3 text-lg font-medium transition-all duration-300 ease ${
-                activeSection === item.href.substring(1) ? "bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent font-semibold" : "text-[#e2d3fd] hover:text-white"
+                activeSection === item.href.substring(1) ? "bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent font-semibold" : "text-rose-900/80 hover:text-rose-600"
               }`}
               style={{
                 transitionDelay: `${index * 100}ms`,
