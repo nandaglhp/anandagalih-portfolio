@@ -98,6 +98,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Name */}
       <div className="space-y-2" data-aos="fade-up" data-aos-duration="1000">
         <label className="block text-sm font-medium text-white">
           Name <span className="text-red-400">*</span>
@@ -108,11 +109,12 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
           onChange={(e) => setUserName(e.target.value)}
           maxLength={15}
           placeholder="Enter your name"
-          className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+          className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-400/30 transition-all"
           required
         />
       </div>
 
+      {/* Message */}
       <div className="space-y-2" data-aos="fade-up" data-aos-duration="1200">
         <label className="block text-sm font-medium text-white">
           Message <span className="text-red-400">*</span>
@@ -123,19 +125,20 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
           maxLength={200}
           onChange={handleTextareaChange}
           placeholder="Write your message here..."
-          className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all resize-none min-h-[120px]"
+          className="w-full p-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-400/30 transition-all resize-none min-h-[120px]"
           required
         />
       </div>
 
+      {/* Profile Photo */}
       <div className="space-y-2" data-aos="fade-up" data-aos-duration="1400">
         <label className="block text-sm font-medium text-white">
           Profile Photo <span className="text-gray-400">(optional)</span>
         </label>
-        <div className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl">
+        <div className="flex items-center gap-4 p-4 bg-white/10 border border-white/20 rounded-xl">
           {imagePreview ? (
             <div className="flex items-center gap-4">
-              <img src={imagePreview} alt="Profile preview" className="w-16 h-16 rounded-full object-cover border-2 border-indigo-500/50" />
+              <img src={imagePreview} alt="Profile preview" className="w-16 h-16 rounded-full object-cover border-2 border-pink-400/50" />
               <button
                 type="button"
                 onClick={() => {
@@ -155,7 +158,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-indigo-500/20 text-indigo-400 hover:bg-indigo-500/30 transition-all border border-dashed border-indigo-500/50 hover:border-indigo-500 group"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-pink-500/20 text-pink-200 hover:bg-pink-500/30 transition-all border border-dashed border-pink-400/50 hover:border-pink-400 group"
               >
                 <ImagePlus className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span>Choose Profile Photo</span>
@@ -166,14 +169,15 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
         </div>
       </div>
 
+      {/* Submit Button */}
       <button
         type="submit"
         disabled={isSubmitting}
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="relative w-full h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-xl font-medium text-white overflow-hidden group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
+        className="relative w-full h-12 bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl font-medium text-white overflow-hidden group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
       >
-        <div className="absolute inset-0 bg-white/20 translate-y-12 group-hover:translate-y-0 transition-transform duration-300" />
+        <div className="absolute inset-0 bg-white/10 translate-y-12 group-hover:translate-y-0 transition-transform duration-300" />
         <div className="relative flex items-center justify-center gap-2">
           {isSubmitting ? (
             <>
