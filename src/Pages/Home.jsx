@@ -64,9 +64,9 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["Data & Business Technology Enthusiast", "Analytical Thinker", "Problem Solver"];
 const TECH_STACK = ["SQL", "Python", "Power BI", "Tableau", "Jira"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/ANANDA GALIH" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ANANDA GALIH/" },
-  { icon: Instagram, link: "https://www.instagram.com/ANANDA GALIH._/?hl=id" },
+  { icon: Github, link: "https://github.com/nandaglhp" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/nandaglhp" },
+  { icon: Instagram, link: "https://www.instagram.com/nandaglhz" },
 ];
 
 const Home = () => {

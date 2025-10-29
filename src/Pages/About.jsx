@@ -149,7 +149,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row items-center gap-4">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/drive/folders/1JPlTc3DVocbd_-pq4_BcqAXKParu058H?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-[#f9a8d4] to-[#fbcfe8] text-white font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 flex items-center gap-2">
                   <FileText className="w-5 h-5" /> Download CV
                 </button>
