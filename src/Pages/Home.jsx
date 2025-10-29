@@ -154,7 +154,7 @@ const Home = () => {
 
                 {/* Description */}
                 <p className="text-base md:text-lg text-pink-100/80 max-w-xl leading-relaxed font-light" data-aos="fade-up" data-aos-delay="1000">
-                  Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
+                  Analyzing and Optimizing Business Data and Technology for Strategic and Innovative Solutions.{" "}
                 </p>
 
                 {/* Tech Stack */}

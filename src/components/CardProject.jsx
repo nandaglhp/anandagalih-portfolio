@@ -21,9 +21,9 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
 
   return (
     <div className="group relative w-full">
-      <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-white/80 via-rose-50/60 to-pink-100/40 backdrop-blur-xl border border-white/40 shadow-xl transition-all duration-300 hover:shadow-pink-300/30">
+      <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-white/30 via-rose-50/20 to-pink-100/20 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-300 hover:shadow-pink-300/20">
         {/* overlay glow pink saat hover */}
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-300/10 via-rose-200/10 to-white/20 opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-300/10 via-rose-200/10 to-white/10 opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
 
         <div className="relative p-5 z-10">
           <div className="relative overflow-hidden rounded-lg">
@@ -31,14 +31,14 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
           </div>
 
           <div className="mt-4 space-y-3">
-            <h3 className="text-xl font-semibold bg-gradient-to-r from-pink-400 via-rose-400 to-pink-600 bg-clip-text text-transparent">{Title}</h3>
+            <h3 className="text-xl font-extrabold bg-gradient-to-r from-pink-400 via-rose-400 to-pink-600 bg-clip-text text-transparent">{Title}</h3>
 
-            <p className="text-gray-600/90 text-sm leading-relaxed line-clamp-2">{Description}</p>
+            <p className="text-white text-sm leading-relaxed line-clamp-2 font-medium">{Description}</p>
 
             <div className="pt-4 flex items-center justify-between">
               {ProjectLink ? (
                 <a href={ProjectLink || "#"} target="_blank" rel="noopener noreferrer" onClick={handleLiveDemo} className="inline-flex items-center space-x-2 text-pink-500 hover:text-pink-400 transition-colors duration-200">
-                  <span className="text-sm font-medium">Live Demo</span>
+                  <span className="text-sm font-semibold">Live Demo</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               ) : (
@@ -51,7 +51,7 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
                   onClick={handleDetails}
                   className="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-pink-100/40 hover:bg-pink-200/60 text-gray-800 font-medium transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-pink-400/50"
                 >
-                  <span className="text-sm">Details</span>
+                  <span className="text-sm font-semibold">Details</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               ) : (
