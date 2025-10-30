@@ -94,7 +94,7 @@ const ProjectStats = ({ project }) => {
         </div>
         <div className="flex-grow">
           <div className="text-lg md:text-xl font-semibold text-pink-200">{techStackCount}</div>
-          <div className="text-[10px] md:text-xs text-rose-200/70">Total Teknologi</div>
+          <div className="text-[10px] md:text-xs text-rose-200/70">Tech Used Total</div>
         </div>
       </div>
 
@@ -110,7 +110,7 @@ const ProjectStats = ({ project }) => {
         </div>
         <div className="flex-grow">
           <div className="text-lg md:text-xl font-semibold text-rose-200">{featuresCount}</div>
-          <div className="text-[10px] md:text-xs text-rose-200/70">Fitur Utama</div>
+          <div className="text-[10px] md:text-xs text-rose-200/70">Key Highlights</div>
         </div>
       </div>
     </div>
