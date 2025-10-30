@@ -61,8 +61,8 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Data & Business Technology Enthusiast", "Analytical Thinker", "Problem Solver"];
-const TECH_STACK = ["SQL", "Python", "Power BI", "Tableau", "Jira"];
+const WORDS = ["Data & Business Technology Enthusiast", "Data Engineer", "System Analyst"];
+const TECH_STACK = ["Data Analyst", "Business Intelligence", "System Analyst", "Project Manager", "Quality Assurance"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/nandaglhp" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/nandaglhp" },
