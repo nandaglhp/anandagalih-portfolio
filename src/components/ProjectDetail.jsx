@@ -209,7 +209,7 @@ const ProjectDetails = () => {
                 </div>
               </div>
 
-              <p className="text-base md:text-lg leading-relaxed text-[#4b4453]/80">{project.Description}</p>
+              <p className="text-base md:text-lg leading-relaxed text-white/90">{project.Description}</p>
 
               <ProjectStats project={project} />
 
@@ -262,10 +262,11 @@ const ProjectDetails = () => {
               </div>
               {/* Key Features */}
               <div className=" backdrop-blur-xl rounded-2xl p-8 border border-pink-200 space-y-6 hover:shadow-lg hover:shadow-pink-100 transition-all duration-300">
-                <h3 className="text-xl font-semibold text-[#4b4453] flex items-center gap-3">
-                  <Star className="w-5 h-5 text-pink-400" />
-                  Key Features
+                <h3 className="text-xl font-semibold bg-gradient-to-r from-pink-300 to-pink-100 bg-clip-text text-transparent flex items-center gap-3">
+                  <Star className="w-5 h-5 text-pink-300" />
+                  Key Highlights
                 </h3>
+
                 {project.Features.length > 0 ? (
                   <ul className="list-none space-y-2">
                     {project.Features.map((feature, index) => (
