@@ -18,12 +18,12 @@ const MainTitle = memo(() => (
     <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-primary-300 to-primary-500 blur-2xl opacity-20"></span>
-        <span className="relative bg-gradient-to-r from-white via-primary-100 to-primary-200 bg-clip-text text-transparent">Data & Business</span>
+        <span className="relative bg-gradient-to-r from-white via-primary-100 to-primary-200 bg-clip-text text-transparent">IT Analyst &</span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-primary-400 to-primary-600 blur-2xl opacity-20"></span>
-        <span className="relative bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">Technology Analyst</span>
+        <span className="relative bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">Fullstack Developer</span>
       </span>
     </h1>
   </div>
@@ -61,8 +61,8 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Data & Business Technology Enthusiast", "Data Engineer", "System Analyst"];
-const TECH_STACK = ["Data Analyst", "Business Intelligence", "System Analyst", "Project Manager", "Quality Assurance"];
+const WORDS = ["Systems Thinking", "Architectural Reasoning", "Abstraction Discipline", "Constraint-Oriented Thinking", "Trade-off Awareness"];
+const TECH_STACK = ["Web Developer", "System Analyst", "Project Manager", "Quality Assurance"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/nandaglhp" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/nandaglhp" },
@@ -154,7 +154,7 @@ const Home = () => {
 
                 {/* Description */}
                 <p className="text-base md:text-lg text-pink-100/80 max-w-xl leading-relaxed font-light" data-aos="fade-up" data-aos-delay="1000">
-                  Analyzing and Optimizing Business Data and Technology for Strategic and Innovative Solutions.{" "}
+                  Architecting Structured Solutions by Translating Complex Requirements into Scalable Fullstack Systems.{" "}
                 </p>
 
                 {/* Tech Stack */}

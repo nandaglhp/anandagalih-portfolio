@@ -120,7 +120,7 @@ const AboutPage = () => {
         animation: "fade-left",
       },
     ],
-    [totalProjects, totalCertificates, YearExperience]
+    [totalProjects, totalCertificates, YearExperience],
   );
 
   return (
@@ -141,11 +141,12 @@ const AboutPage = () => {
             </h2>
 
             <p className="text-base sm:text-lg lg:text-xl text-pink-100/80 leading-relaxed text-justify pb-4 sm:pb-0" data-aos="fade-right" data-aos-duration="1500">
-              Certified Data Analyst with one year of experience in real-world data projects and internships. Passionate about transforming raw data into meaningful insights and creating visually engaging dashboards for decision-making.
+              Certified Web Developer with over one year of hands-on internship experience, including six months in project management, specializing in React, Laravel, system analysis, and quality assurance to deliver scalable and
+              maintainable web systems within collaborative teams.{" "}
             </p>
 
             <div className="relative bg-pink-100/5 border border-pink-200/20 rounded-2xl p-4 my-6 backdrop-blur-md shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1700">
-              <blockquote className="text-pink-100/80 italic font-medium text-sm text-center lg:text-left">“Empowering business decisions through data-driven insights.”</blockquote>
+              <blockquote className="text-pink-100/80 italic font-medium text-sm text-center lg:text-left">“Engineering scalable digital solutions that translate business strategy into measurable outcomes.”</blockquote>
             </div>
 
             <div className="flex flex-col lg:flex-row items-center gap-4">
